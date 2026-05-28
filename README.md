@@ -57,6 +57,9 @@ DailySprint helps users organize tasks, maintain productivity streaks, and stay 
 
 ---
 
+## Sequence diagram
+![Sequence Diagram](assets/image.png)
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -103,14 +106,6 @@ DailySprint is designed around a simple philosophy:
 > Small consistent actions create long-term results.
 
 Instead of overwhelming users with complex project management systems, DailySprint focuses on clarity, momentum, and maintaining productive streaks.
-
----
-
-## 👩‍💻 Author
-
-**Revati**
-B.E. Information Technology Student
-Passionate about building practical and user-focused web applications.
 
 ---
 
