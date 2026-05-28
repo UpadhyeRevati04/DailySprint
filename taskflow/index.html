@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DailySprint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <div class="auth-container" id="authContainer">
+    <!-- Logo -->
+    <div class="logo-block">
+      <div class="logo-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="10" height="10" rx="2" fill="currentColor"/>
+          <rect x="16" y="2" width="10" height="10" rx="2" fill="currentColor" opacity="0.5"/>
+          <rect x="2" y="16" width="10" height="10" rx="2" fill="currentColor" opacity="0.5"/>
+          <rect x="16" y="16" width="10" height="10" rx="2" fill="currentColor"/>
+        </svg>
+      </div>
+      <span class="logo-text">DailySprint</span>
+    </div>
+
+    <!-- Tab Toggle -->
+    <div class="tab-row">
+      <button class="tab-btn active" id="tabLogin" onclick="showLogin()">Sign In</button>
+      <button class="tab-btn" id="tabRegister" onclick="showRegister()">Register</button>
+      <div class="tab-indicator" id="tabIndicator"></div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-panel" id="loginPanel">
+      <div class="form-header">
+        <h1>Welcome back</h1>
+        <p>Pick up right where you left off.</p>
+      </div>
+      <div class="field-group">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="you@email.com" autocomplete="email" />
+      </div>
+      <div class="field-group">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password" />
+      </div>
+      <div id="loginError" class="form-error hidden"></div>
+      <button class="btn-primary" onclick="handleLogin()">
+        <span>Sign In</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form-footer">New here? <a onclick="showRegister()">Create an account →</a></p>
+    </div>
+
+    <!-- Register Form -->
+    <div class="form-panel hidden" id="registerPanel">
+      <div class="form-header">
+        <h1>Start your streak</h1>
+        <p>Build habits. Ship things. Stay consistent.</p>
+      </div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>First Name</label>
+          <input type="text" id="regFirst" placeholder="Alex" />
+        </div>
+        <div class="field-group">
+          <label>Last Name</label>
+          <input type="text" id="regLast" placeholder="Smith" />
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Email</label>
+        <input type="email" id="regEmail" placeholder="you@email.com" autocomplete="email" />
+      </div>
+      <div class="field-group">
+        <label>Password</label>
+        <input type="password" id="regPassword" placeholder="Min 6 characters" autocomplete="new-password" />
+      </div>
+      <div id="registerError" class="form-error hidden"></div>
+      <button class="btn-primary" onclick="handleRegister()">
+        <span>Create Account</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form-footer">Already have an account? <a onclick="showLogin()">Sign in →</a></p>
+    </div>
+  </div>
+
+  <!-- Tagline aside -->
+  <div class="auth-aside">
+    <div class="streak-preview">
+      <div class="streak-dots">
+        <div class="dot filled"></div>
+        <div class="dot filled"></div>
+        <div class="dot filled"></div>
+        <div class="dot filled"></div>
+        <div class="dot filled"></div>
+        <div class="dot today pulse"></div>
+        <div class="dot"></div>
+      </div>
+      <p class="streak-label">🔥 Keep your streak alive</p>
+    </div>
+    <h2 class="aside-headline">Tasks done.<br/>Streaks earned.</h2>
+    <p class="aside-sub">Set realistic timelines. Complete tasks. Build an unbroken chain of productivity.</p>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
