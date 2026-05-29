@@ -5,6 +5,10 @@ DailySprint helps users organize tasks, maintain productivity streaks, and stay 
 
 ---
 
+## Live Demo
+🚀 [Live Demo](https://dailysprint.netlify.app/)
+---
+
 ## ✨ Features
 
 * 🔐 User Authentication (Login & Registration)
@@ -17,6 +21,8 @@ DailySprint helps users organize tasks, maintain productivity streaks, and stay 
 * 🧩 Modular Frontend Structure
 
 ---
+
+
 
 ## 🛠️ Tech Stack
 
